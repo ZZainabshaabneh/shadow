@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class NewBehaviourScript : MonoBehaviour
-{ 
+{
 
-    public float minScale = 0;
+    public float minScale = 0.1f;
     public float maxScale = 0.9f;
-    private float scaleFactor; 
-    public float speed = 1000f;
+    private float scaleFactor;
+    float speed = 0.25f;
 
     void Start()
     {
@@ -21,7 +21,7 @@ public class NewBehaviourScript : MonoBehaviour
 
         if (Input.GetKey(KeyCode.D))
         {
-            scaleFactor +=speed*Time.deltaTime; 
+            scaleFactor += speed * Time.deltaTime;
         }
         else if (Input.GetKey(KeyCode.A))
         {
