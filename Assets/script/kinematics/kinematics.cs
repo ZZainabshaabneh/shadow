@@ -10,6 +10,7 @@ public class kinematics : MonoBehaviour
 
     void Update()
     {
+        // 
         if (Input.GetKey(KeyCode.D)) // Right
         {
             bookAngle -= Time.deltaTime * openBookSpeed;
